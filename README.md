@@ -1,3 +1,8 @@
+# Objetivo do Sistema
+
+O objetivo principal do sistema é servir como um auxiliar ajudando na organização financeira pessoal.
+
+---
 # HTML
 
 O sistema esta dividido em quatro arquivos, o Index.html e o aquivo inicial onde temos também os arquivos bank.html, branch.html e catagory.html cada um responsável por um tipo de cadastro. 
