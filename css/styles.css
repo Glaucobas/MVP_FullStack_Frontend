@@ -1,0 +1,202 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}   
+
+body, html { 
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.background {
+    background-image: url('../imagens/ai-generated-8223420_1280.png'); /* URL da imagem de fundo */ 
+    background-size: cover; /* Ajusta a imagem para cobrir todo o contêiner */ 
+    background-repeat: no-repeat; /* Evita a repetição da imagem */ 
+    background-position: center center; /* Centraliza a imagem */ 
+    height: 100vh; /* Ajusta a altura para 100% da visualização */ 
+}
+
+.header { 
+    position: absolute;
+    top: 10px;
+    padding: 10px; 
+    height: 100px;
+    width: 100%;
+    color:aquamarine;
+    font-size: large;
+}
+
+.search {
+    position: absolute;
+    top: 70px;
+    color: white;
+    width: 98%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px; 
+}
+
+nav { 
+    position: absolute;
+    top: 110px;
+    width: 220px; 
+    color: white; 
+}
+
+.form {
+    position: absolute;
+    top: 110px;
+    left: 250px;
+    width: 80%;
+    font-size: 16px;
+    color: black;
+    padding: 16px;
+    background-color: rgba(186, 207, 181, 0.7);
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px; 
+    border-bottom-left-radius: 20px;
+}
+
+main {
+    position: absolute;
+    top: 170px;
+    left: 250px;
+    width: 80%;
+    height: 65%;
+    background-color: rgba(223, 231, 221, 0.8);
+    padding: 15px; 
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px; 
+    border-bottom-left-radius: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+.table-container {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 97%;
+    max-height: 90%;
+    padding: 15px; 
+    overflow: auto;
+}
+
+th { 
+    border: 2px solid black; 
+    background-color: #e9c77d; 
+    text-align: center;
+    height: 10px;
+}
+
+#td-code { 
+    padding: 8px; 
+    text-align: right; 
+    font-size: 12px;
+    
+}
+
+#td-description { 
+    padding: 8px; 
+    text-align: left; 
+    font-size: 12px;
+}
+
+#td-value { 
+    padding: 8px; 
+    text-align: right; 
+    font-size: 12px;
+}
+
+/* Estilo do span que contém a imagem */
+.span-delete { 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.btn-delete {
+    width: 15px;
+    cursor: pointer;
+}
+
+.year {
+    display: flex;
+    color: white;
+    padding: 2px;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 10px 10px 10px; 
+}
+
+#input-year {
+    text-align: right;
+    width: 50px;
+}
+
+.button { 
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    background-color: rgba(186, 207, 181, 0.5);
+    font-size: 16px;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    color: black;
+    margin: 10px;
+
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px; 
+    border-bottom-left-radius: 20px;
+} 
+
+.button:hover { 
+    color: white;
+    background-color: #45a049; 
+}
+
+.btn-add { 
+    color: white;
+    background-color: #152e16; 
+    height: 20px;
+    width: 100px;
+}
+
+.btn-add:hover { 
+    color: white;
+    background-color: #45a049; 
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-item {
+    padding: 10px; 
+    cursor: pointer; 
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-item:hover {
+    background-color: #e9e9e9;
+}
+
+.highlight {
+    background-color: yellow;  
+}
