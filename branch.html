@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Agências</title>
+  </head>
+  
+  <body>
+
+    <div class="background"></div>
+      
+    <!-- Titulo da página -->
+    <header class="header"> 
+      <h1>Controle Financeiro - Cadastro de Agências Bancárias</h1>
+    </header> 
+
+    <!-- Seção de busca -->
+    <section class="search">
+      <input type="text" id="input-search" placeholder="Produrar:">
+      <button onclick="searchValue()" class="btn-add">Pesquisar</button>
+    </section>
+
+    <!-- Menu de nevegação -->
+    <nav>
+      <div><a href="index.html"     class="button">Home</a></div>
+      <div><a href="category.html" class="button">Categorias</a></div>
+      <div><a href="bank.html"      class="button">Bancos</a></div>
+      <div><a href="branch.html"    class="button">Agências</a></div>
+      <!-- <div><a href="categoria.html" class="button">Contas</a></div> -->
+      <!-- <div><a href="categoria.html" class="button">Recursos</a></div> -->
+      <!-- <div><a href="categoria.html" class="button">Transações</a></div> -->
+    </nav>
+
+    <!-- Formulário para adicionar um novo item -->
+    <section class="form">
+      Banco     <select name="new-bank-code" id="new-bank-code" ></select>
+      Agência   <input  type="number"        id="new-branch-code"        placeholder="Ex: 01234">
+      Descrição <input  type="text"          id="new-branch-description" placeholder="Ex: Centro">
+      <button onclick="newBranch()"          class="btn-add">Adicionar</button>
+    </section>
+
+    <!-- Corpo da página -->
+    <main>
+          
+      <!-- Tabela com items existentes -->
+      <section class="table-container">
+        <table id="table-branch">
+          <tr>
+            <th>Banco</th>
+            <th>Descrição</th>
+            <th>Agencia</th>
+            <th>Descrição</th>
+            <th center><img src="imagens/126468.png" width="15px" height="15px"></th>
+          </tr>
+        </table>
+        </section>
+      </main>
+    
+      <script src="js/branch.js"></script>  
+  
+    </body>
+</html>
